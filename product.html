@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exclusive Store</title>
+        <script src="script.js" defer></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            .inter {
+                font-family: "Inter", sans-serif;
+                font-optical-sizing: auto;
+            }
+
+            body {
+                font-family: "Inter", sans-serif;
+                font-optical-sizing: auto;
+            }
+        </style>
+    </head>
+
+    <body class="bg-gray-200 capitalize">
+        <div class="flex flex-col max-w-screen-xl mx-auto">
+            <!-- Navbar -->
+            <nav
+                class="flex justify-between py-2 pt-7 border-b border-gray-300 items-center"
+            >
+                <div class="text-2xl font-extrabold pr-20">Exclusive</div>
+                <div class="flex gap-10 font-semibold text-lg">
+                    <a
+                        href="#"
+                        class="hover:border-gray-400 border-b border-transparent"
+                        >Home</a
+                    >
+                    <a
+                        href="#"
+                        class="hover:border-gray-400 border-b border-transparent"
+                        >Contact</a
+                    >
+                    <a
+                        href="#"
+                        class="hover:border-gray-400 border-b border-transparent"
+                        >About</a
+                    >
+                    <a
+                        href="#"
+                        class="hover:border-gray-400 border-b border-transparent"
+                        >Sign Up</a
+                    >
+                </div>
+                <div class="flex gap-3 items-center justify-center">
+                    <div class="flex gap-3 bg-[#F5F5F5] p-2 rounded-md">
+                        <input
+                            type="text"
+                            placeholder="What are you looking for ?"
+                            class="bg-transparent outline-none"
+                        />
+                        <i class="bi bi-search text-xl font-bold"></i>
+                    </div>
+                    <i class="bi bi-person text-2xl font-bold px-2"></i>
+                    <i class="bi bi-heart text-2xl font-bold px-2"></i>
+                    <i class="bi bi-cart text-2xl font-bold px-2"></i>
+                </div>
+            </nav>
+            <!-- product Details -->
+            <div class="flex flex-col">
+                <div class="my-16">
+                    <span class="text-gray-500"> Account / Gaming /</span> Havic
+                    HV G-92 Gamepad
+                </div>
+                <div class="flex h-[600px]">
+                    <div class="flex flex-col gap-3 w-[15%]">
+                        <div
+                            class="relative flex items-center justify-center w-[120px] h-[120px] bg-white p-3 rounded-lg"
+                        >
+                            <img src="/image 57.png" alt="" class="w-full" />
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-[120px] h-[120px] bg-white p-3 rounded-lg"
+                        >
+                            <img src="/image 58.png" alt="" class="w-full" />
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-[120px] h-[120px] bg-white p-3 rounded-lg"
+                        >
+                            <img src="/image 59.png" alt="" class="w-full" />
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-[120px] h-[120px] bg-white p-3 rounded-lg"
+                        >
+                            <img src="/image 61.png" alt="" class="w-full" />
+                        </div>
+                    </div>
+                    <div
+                        class="relative h-full w-[45%] bg-white flex items-center justify-center my-auto"
+                    >
+                        <div class="flex items-center justify-center p-3">
+                            <img
+                                src="/image 63.png"
+                                alt=""
+                                class="w-full h-full object-contain"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col pl-5 w-[40%] gap-5">
+                        <div class="text-2xl">Havic HV G-92 Gamepad</div>
+                        <div>
+                            <div class="flex gap-2">
+                                <!-- stars -->
+                                <span>
+                                    <i
+                                        class="bi bi-star-fill text-yellow-500"
+                                    ></i>
+                                    <i
+                                        class="bi bi-star-fill text-yellow-500"
+                                    ></i>
+                                    <i
+                                        class="bi bi-star-fill text-yellow-500"
+                                    ></i>
+                                    <i
+                                        class="bi bi-star-fill text-yellow-500"
+                                    ></i>
+                                </span>
+                                <span
+                                    class="text-gray-400 pr-5 border-r border-gray-600"
+                                    >(88)</span
+                                >
+                                <span class="text-green-500 font-bold"
+                                    >In Stock</span
+                                >
+                            </div>
+                        </div>
+                        <div class="text-2xl">$192.00</div>
+                        <div class="font-bold text-gray-600">
+                            PlayStation 5 Controller Skin High quality vinyl
+                            with air channel adhesive for easy bubble free
+                            install & mess free removal Pressure sensitive.
+                        </div>
+                        <div class="flex items-center text-lg">
+                            <span class="flex items-center gap-2"
+                                >Colors:
+                                <button
+                                    class="w-6 h-6 rounded-full bg-red-400 inline-block border-2 border-transparent focus:border-black"
+                                ></button>
+                                <button
+                                    class="w-6 h-6 rounded-full bg-blue-400 inline-block border-2 border-transparent focus:border-black"
+                                ></button>
+                            </span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 text-md font-semibold"
+                        >
+                            <span class="text-lg">Size: </span>
+                            <button
+                                class="rounded-md h-7 w-7 bg-white text-black border border-gray-500 hover:border-transparent p-2 flex items-center justify-center hover:bg-red-500 hover:text-white duration-300"
+                            >
+                                XS
+                            </button>
+                            <button
+                                class="rounded-md h-7 w-7 bg-white text-black border border-gray-500 hover:border-transparent p-2 flex items-center justify-center hover:bg-red-500 hover:text-white duration-300"
+                            >
+                                S
+                            </button>
+                            <button
+                                class="rounded-md h-7 w-7 bg-white text-black border border-gray-500 hover:border-transparent p-2 flex items-center justify-center hover:bg-red-500 hover:text-white duration-300"
+                            >
+                                M
+                            </button>
+                            <button
+                                class="rounded-md h-7 w-7 bg-white text-black border border-gray-500 hover:border-transparent p-2 flex items-center justify-center hover:bg-red-500 hover:text-white duration-300"
+                            >
+                                L
+                            </button>
+                            <button
+                                class="rounded-md h-7 w-7 bg-white text-black border border-gray-500 hover:border-transparent p-2 flex items-center justify-center hover:bg-red-500 hover:text-white duration-300"
+                            >
+                                XL
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between gap-4">
+                            <div
+                                class="bg-white text-black rounded-md flex items-center justify-center overflow-hidden font-bold text-2xl h-8 border border-gray-500"
+                            >
+                                <button
+                                    class="border-r flex items-center p-2 justify-center relative hover:bg-[#DB4444] hover:text-white duration-300 px-2 border-l-0 border border-gray-500"
+                                >
+                                    <i class="bi bi-dash"></i>
+                                </button>
+                                <span class="px-4">1</span>
+                                <button
+                                    class="border-l flex items-center p-2 justify-center relative hover:bg-[#DB4444] hover:text-white duration-300 px-2 border-r-0 border border-gray-500"
+                                >
+                                    <i class="bi bi-plus-lg"></i>
+                                </button>
+                            </div>
+                            <button
+                                class="h-full bg-red-500 hover:bg-red-600 duration-200 text-white px-10 rounded-md shadow-md shadow-gray-600"
+                            >
+                                Buy Now
+                            </button>
+                        </div>
+                        <div
+                            class="flex flex-col border border-gray-500 rounded-md"
+                        >
+                            <div class="flex items-center gap-2 p-2">
+                                <div class="relative pr-3">
+                                    <img
+                                        src="/icon-delivery.png"
+                                        alt=""
+                                        class="w-full"
+                                    />
+                                </div>
+                                <div class="flex flex-col text-xs font-bold">
+                                    <div class="text-lg pb-3">
+                                        Free Delivery
+                                    </div>
+                                    <div
+                                        class="border-b border-gray-500 w-full whitespace-nowrap leading-3"
+                                    >
+                                        Enter your postal code for Delivery
+                                        Availability
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-2 p-2 border-t border-gray-500"
+                            >
+                                <div class="relative pr-3">
+                                    <img
+                                        src="/Icon-return.png"
+                                        alt=""
+                                        class="object-contain"
+                                    />
+                                </div>
+                                <div class="flex flex-col text-xs font-bold">
+                                    <div class="text-lg pb-3">
+                                        Return Delivery
+                                    </div>
+                                    <div>
+                                        Free 30 Days Delivery Returns
+                                        <span class="border-b border-gray-500"
+                                            >Details</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex mt-10 gap-2 flex-col h-[500px] my-5">
+                <div class="flex items-center gap-2">
+                    <span
+                        class="w-3 h-7 inline-block bg-red-500 rounded-sm"
+                    ></span>
+                    <span class="text-red-500 font-bold text-sm"
+                        >Related Products</span
+                    >
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex flex-col gap-2 w-1/4">
+                        <div
+                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                        >
+                            <div
+                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
+                            >
+                                -40%
+                            </div>
+                            <div
+                                class="absolute flex flex-col gap-2 top-2 right-2"
+                            >
+                                <i class="bi bi-heart text-2xl"></i>
+                                <i class="bi bi-eye text-2xl"></i>
+                            </div>
+                            <div class="p-7 flex-1">
+                                <img src="/p1.png" alt="" />
+                            </div>
+                            <button
+                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
+                            >
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="text-black font-extrabold text-sm">
+                            HAVIT HV-G92 Gamepad
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-red-500 text-sm font-bold"
+                                >$120</span
+                            >
+                            <span
+                                class="line-through text-sm font-bold text-gray-400"
+                                >$160</span
+                            >
+                        </div>
+                        <div class="flex gap-2">
+                            <!-- stars -->
+                            <span>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                            </span>
+                            <span class="text-gray-400">(88)</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 w-1/4">
+                        <div
+                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                        >
+                            <div
+                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
+                            >
+                                -40%
+                            </div>
+                            <div
+                                class="absolute flex flex-col gap-2 top-2 right-2"
+                            >
+                                <i class="bi bi-heart text-2xl"></i>
+                                <i class="bi bi-eye text-2xl"></i>
+                            </div>
+                            <div class="p-7 flex-1">
+                                <img src="/p1.png" alt="" />
+                            </div>
+                            <button
+                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
+                            >
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="text-black font-extrabold text-sm">
+                            HAVIT HV-G92 Gamepad
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-red-500 text-sm font-bold"
+                                >$120</span
+                            >
+                            <span
+                                class="line-through text-sm font-bold text-gray-400"
+                                >$160</span
+                            >
+                        </div>
+                        <div class="flex gap-2">
+                            <!-- stars -->
+                            <span>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                            </span>
+                            <span class="text-gray-400">(88)</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 w-1/4">
+                        <div
+                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                        >
+                            <div
+                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
+                            >
+                                -40%
+                            </div>
+                            <div
+                                class="absolute flex flex-col gap-2 top-2 right-2"
+                            >
+                                <i class="bi bi-heart text-2xl"></i>
+                                <i class="bi bi-eye text-2xl"></i>
+                            </div>
+                            <div class="p-7 flex-1">
+                                <img src="/p1.png" alt="" />
+                            </div>
+                            <button
+                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
+                            >
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="text-black font-extrabold text-sm">
+                            HAVIT HV-G92 Gamepad
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-red-500 text-sm font-bold"
+                                >$120</span
+                            >
+                            <span
+                                class="line-through text-sm font-bold text-gray-400"
+                                >$160</span
+                            >
+                        </div>
+                        <div class="flex gap-2">
+                            <!-- stars -->
+                            <span>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                            </span>
+                            <span class="text-gray-400">(88)</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 w-1/4">
+                        <div
+                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                        >
+                            <div
+                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
+                            >
+                                -40%
+                            </div>
+                            <div
+                                class="absolute flex flex-col gap-2 top-2 right-2"
+                            >
+                                <i class="bi bi-heart text-2xl"></i>
+                                <i class="bi bi-eye text-2xl"></i>
+                            </div>
+                            <div class="p-7 flex-1">
+                                <img
+                                    src="/p1.png"
+                                    alt=""
+                                    class="object-contain"
+                                />
+                            </div>
+                            <button
+                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
+                            >
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="text-black font-extrabold text-sm">
+                            HAVIT HV-G92 Gamepad
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-red-500 text-sm font-bold"
+                                >$120</span
+                            >
+                            <span
+                                class="line-through text-sm font-bold text-gray-400"
+                                >$160</span
+                            >
+                        </div>
+                        <div class="flex gap-2">
+                            <!-- stars -->
+                            <span>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                                <i class="bi bi-star-fill text-yellow-500"></i>
+                            </span>
+                            <span class="text-gray-400">(88)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="w-full bg-black py-10 text-white whitespace-nowrap">
+            <div class="max-w-screen-lg mx-auto flex w-full gap-10">
+                <div class="flex flex-col gap-4">
+                    <div class="font-bold text-xl my-2">Exclusive</div>
+                    <div class="font-bold text-lg">Subscribe</div>
+                    <div>Get 10% off your first order</div>
+                    <div
+                        class="flex border border-white w-fit rounded-md px-2 items-center justify-center"
+                    >
+                        <input
+                            class="h-10 outline-none bg-transparent"
+                            type="text"
+                            placeholder="Enter your email"
+                        />
+                        <i class="bi bi-arrow-right text-2xl"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="font-bold text-xl my-2">Support</div>
+                    <div class="font-bold text-lg">
+                        11 Giza street,cairo, egypt
+                    </div>
+                    <div>exclusive@gmail.com</div>
+                    <div>+20123456789</div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="font-bold text-xl my-2">Account</div>
+                    <div class="font-bold text-lg">My Account</div>
+                    <div>Login / Register</div>
+                    <div>Cart</div>
+                    <div>wishlist</div>
+                    <div>shop</div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="font-bold text-xl my-2">Quick Link</div>
+                    <div class="font-bold text-lg">Privacy Policy</div>
+                    <div>Terms Of Use</div>
+                    <div>FAQ</div>
+                    <div>Contact</div>
+                </div>
+                <div class="flex flex-col gap-4 w-full">
+                    <div class="font-bold text-xl my-2">Download App</div>
+                    <div class="flex gap-2 items-center justify-center">
+                        <div class="relative">
+                            <img
+                                src="/Qrcode 1.png"
+                                alt=""
+                                class="object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <img src="/download-appstore.png" alt="" />
+                            <img src="/google.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center gap-4">
+                        <i class="bi bi-facebook text-2xl"></i>
+                        <i class="bi bi-twitter text-2xl"></i>
+                        <i class="bi bi-instagram text-2xl"></i>
+                        <i class="bi bi-pinterest text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

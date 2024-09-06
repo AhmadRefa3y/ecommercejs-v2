@@ -29,14 +29,23 @@
         </style>
     </head>
 
-    <body class="bg-gray-200 capitalize">
-        <div class="flex flex-col max-w-screen-xl mx-auto">
+    <body class="bg-white capitalize">
+        <div class="flex flex-col max-w-screen-xl px-3 mx-auto">
             <!-- Navbar -->
             <nav
-                class="flex justify-between py-2 pt-7 border-b border-gray-300 items-center"
+                class="flex relative justify-center md:justify-between py-2 border-b border-gray-300 items-center px-5 flex-wrap"
             >
-                <div class="text-2xl font-extrabold pr-20">Exclusive</div>
-                <div class="flex gap-10 font-semibold text-lg">
+                <div class="text-2xl font-extrabold xl:pr-20">Exclusive</div>
+                <div
+                    class="md:hidden ml-auto flex items-center justify-center gap-2"
+                >
+                    <i class="bi bi-list text-4xl" id="menuIcon"></i>
+                    <i class="bi bi-search text-2xl" id="searchIcon"></i>
+                </div>
+                <div
+                    class="gap-10 font-semibold text-lg flex-col md:flex-row order-2 md:order-none w-full md:w-fit p-5 md:p-0 bg-white md:bg-transparent md:my-0 items-center md:items-baseline absolute md:relative top-full z-50 hidden md:flex rounded-md ml-auto md:ml-0"
+                    id="menu"
+                >
                     <a
                         href="#"
                         class="hover:border-gray-400 border-b border-transparent"
@@ -58,15 +67,24 @@
                         >Sign Up</a
                     >
                 </div>
-                <div class="flex gap-3 items-center justify-center">
-                    <div class="flex gap-3 bg-[#F5F5F5] p-2 rounded-md">
+                <div
+                    class="gap-3 items-center justify-center rounded-md w-full md:w-fit my-2 md:my-0 absolute md:relative top-full z-50 bg-white md:bg-transparent"
+                >
+                    <div
+                        class="gap-3 bg-[#F5F5F5] p-2 rounded-md w-full hidden xl:flex"
+                        id="search"
+                    >
                         <input
                             type="text"
                             placeholder="What are you looking for ?"
-                            class="bg-transparent outline-none"
+                            class="bg-transparent outline-none w-full"
                         />
                         <i class="bi bi-search text-xl font-bold"></i>
                     </div>
+                </div>
+                <div
+                    class="gap-3 w-full md:w-fit flex items-center justify-center"
+                >
                     <i class="bi bi-person text-2xl font-bold px-2"></i>
                     <i class="bi bi-heart text-2xl font-bold px-2"></i>
                     <i class="bi bi-cart text-2xl font-bold px-2"></i>

@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Exclusive Store</title>
-        <script src="/assets/js/script.js" defer></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link
             rel="stylesheet"
@@ -27,6 +26,7 @@
                 font-optical-sizing: auto;
             }
         </style>
+        <script src="assets/js/homePage.js" defer></script>
     </head>
 
     <body class="bg-white capitalize">
@@ -187,220 +187,192 @@
                     <div class="flex items-end">
                         <div class="flex flex-col items-center">
                             <span class="text-xs font-bold">Days</span>
-                            <span class="text-xl font-bold">03</span>
+                            <span id="days" class="text-xl font-bold opacity-0"
+                                >00</span
+                            >
                         </div>
                         <span class="text-3xl text-red-500 px-1">:</span>
                         <div class="flex flex-col items-center">
                             <span class="text-xs font-bold">Hours</span>
-                            <span class="text-xl font-bold">23</span>
+                            <span id="hours" class="text-xl font-bold opacity-0"
+                                >00</span
+                            >
                         </div>
                         <span class="text-3xl text-red-500 px-1">:</span>
                         <div class="flex flex-col items-center">
                             <span class="text-xs font-bold">Minutes</span>
-                            <span class="text-xl font-bold">19</span>
+                            <span
+                                id="minutes"
+                                class="text-xl font-bold opacity-0"
+                                >00</span
+                            >
                         </div>
                         <span class="text-3xl text-red-500 px-1">:</span>
                         <div class="flex flex-col items-center">
                             <span class="text-xs font-bold">Seconds</span>
-                            <span class="text-xl font-bold">56</span>
+                            <span
+                                id="seconds"
+                                class="text-xl font-bold opacity-0"
+                                >00</span
+                            >
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-2">
-                    <div class="flex flex-col gap-2 w-1/4">
+                <div class="flex gap-2" id="flash">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
                             <div
-                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
-                            >
-                                -40%
-                            </div>
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-1/4">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
                             <div
-                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
-                            >
-                                -40%
-                            </div>
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-1/4">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
                             <div
-                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
-                            >
-                                -40%
-                            </div>
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-1/4">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
                             <div
-                                class="absolute top-2 left-2 w-15 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
-                            >
-                                -40%
-                            </div>
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img
-                                    src="/assets/imgs/p1.png"
-                                    alt=""
-                                    class="object-contain"
-                                />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
                 </div>
@@ -470,7 +442,7 @@
                         class="p-4 flex items-center justify-center flex-col border border-gray-400 rounded-md px-10 w-1/6"
                     >
                         <img
-                            src="/assets/imgs/assets/imgs/Category1.png"
+                            src="/assets/imgs/Category1.png"
                             alt=""
                             class="w-15 h-15 object-contain"
                         />
@@ -494,188 +466,175 @@
                     <span
                         class="w-4 h-10 inline-block bg-red-500 rounded-sm"
                     ></span>
-                    <span class="text-red-500 font-bold text-sm"
-                        >this Month</span
-                    >
+                    <span class="text-red-500 font-bold text-sm">Today's</span>
                 </div>
                 <div class="flex items-center">
                     <div class="text-black text-2xl font-bold mr-36">
-                        Best Selling Products
+                        Best Sellers
                     </div>
                 </div>
-                <div class="flex gap-2">
-                    <div class="flex flex-col gap-2 w-1/4">
+                <div class="flex gap-2" id="best-sellers">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
+                            <div
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-1/4">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
+                            <div
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-1/4">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
+                            <div
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-1/4">
+                    <div
+                        class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md"
+                    >
                         <div
-                            class="relative bg-[#F5F5F5] rounded-md overflow-hidden group h-[250px] flex justify-between flex-col items-center"
+                            class="relative bg-white overflow-hidden group h-[250px] flex justify-between flex-col items-center"
                         >
+                            <div
+                                class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm w-[55px] animate-pulse"
+                            ></div>
                             <div
                                 class="absolute flex flex-col gap-2 top-2 right-2"
                             >
-                                <i class="bi bi-heart text-2xl"></i>
-                                <i class="bi bi-eye text-2xl"></i>
+                                <i
+                                    class="bi bi-heart text-2xl animate-pulse"
+                                ></i>
+                                <i class="bi bi-eye text-2xl animate-pulse"></i>
                             </div>
-                            <div class="p-7 flex-1">
-                                <img src="/assets/imgs/p1.png" alt="" />
-                            </div>
-                            <button
-                                class="w-full bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
-                            >
-                                Add to cart
-                            </button>
+                            <div
+                                class="flex-1 relative h-full animate-pulse"
+                            ></div>
                         </div>
-                        <div class="text-black font-extrabold text-sm">
-                            HAVIT HV-G92 Gamepad
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-red-500 text-sm font-bold"
-                                >$120</span
-                            >
+                        <div
+                            class="text-black font-extrabold text-sm animate-pulse bg-gray-200 h-[40px] w-[200px] rounded-md"
+                        ></div>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-[110px]"
+                        >
+                            <span class="text-red-500 text-sm font-bold"></span>
                             <span
                                 class="line-through text-sm font-bold text-gray-400"
-                                >$160</span
-                            >
+                            ></span>
                         </div>
-                        <div class="flex gap-2">
-                            <!-- stars -->
-                            <span>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                                <i class="bi bi-star-fill text-yellow-500"></i>
-                            </span>
-                            <span class="text-gray-400">(88)</span>
+                        <div
+                            class="flex gap-2 animate-pulse bg-gray-200 h-[20px] w-full"
+                        >
+                            <span> </span>
+                            <span class="text-gray-400"></span>
                         </div>
                     </div>
+                </div>
+                <div
+                    class="flex items-center justify-center bg-red-500 w-fit mx-auto p-2 rounded-md text-sm text-white px-5 font-bold my-5"
+                >
+                    <button>View All Products</button>
                 </div>
             </div>
             <!-- banner -->
@@ -696,25 +655,31 @@
                         <div
                             class="flex flex-col items-center bg-white rounded-full text-black w-16 h-16 justify-center"
                         >
-                            <span class="text-xl font-bold">03</span>
+                            <span class="text-xl font-bold" id="days2">03</span>
                             <span class="text-xs font-bold">Days</span>
                         </div>
                         <div
                             class="flex flex-col items-center bg-white rounded-full text-black w-16 h-16 justify-center"
                         >
-                            <span class="text-xl font-bold">23</span>
+                            <span class="text-xl font-bold" id="hours2"
+                                >23</span
+                            >
                             <span class="text-xs font-bold">Hours</span>
                         </div>
                         <div
                             class="flex flex-col items-center bg-white rounded-full text-black w-16 h-16 justify-center"
                         >
-                            <span class="text-xl font-bold">19</span>
+                            <span class="text-xl font-bold" id="minutes2"
+                                >19</span
+                            >
                             <span class="text-xs font-bold">Minutes</span>
                         </div>
                         <div
                             class="flex flex-col items-center bg-white rounded-full text-black w-16 h-16 justify-center"
                         >
-                            <span class="text-xl font-bold">56</span>
+                            <span class="text-xl font-bold" id="seconds2"
+                                >56</span
+                            >
                             <span class="text-xs font-bold">Seconds</span>
                         </div>
                     </div>

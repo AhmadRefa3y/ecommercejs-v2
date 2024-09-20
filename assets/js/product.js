@@ -120,7 +120,7 @@ const RenderProduct = async (Data, PreantId) => {
                             <div class="flex items-center gap-2 p-2">
                                 <div class="relative pr-3">
                                     <img
-                                        src="/assets/imgs/icon-delivery.png"
+                                        src="./assets/imgs/icon-delivery.png"
                                         alt=""
                                         class="w-full"
                                     />
@@ -143,7 +143,7 @@ const RenderProduct = async (Data, PreantId) => {
                             >
                                 <div class="relative pr-3">
                                     <img
-                                        src="/assets/imgs/Icon-return.png"
+                                        src="./assets/imgs/Icon-return.png"
                                         alt=""
                                         class="object-contain"
                                     />

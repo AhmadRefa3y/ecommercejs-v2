@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.adsBar {
+    padding: 10px 0c;
+    font-size: 14px;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#searchBar input {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+/* Main Content Styles */
+.contact, .form {
+    background-color: white;
+    padding: 175px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h3, .form h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact i {
+    margin-right: 10px;
+    color: #e74c3c;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form .btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+form .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Styles */
+footer {
+    color: #fff;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.social a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    #searchBar {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    #searchBar input {
+        width: 100%;
+    }
+}

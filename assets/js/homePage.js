@@ -1,3 +1,13 @@
+const toggleMenu = () => {
+    const menu = document.getElementById("nav-items");
+    if (menu.classList.contains("d-none")) {
+        menu.classList.remove("d-none");
+        menu.classList.add("d-flex");
+    } else {
+        menu.classList.remove("d-flex");
+        menu.classList.add("d-none");
+    }
+};
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -22,58 +32,132 @@ const RenderProducts = async (products, PreantId) => {
                 stars += ` <i class="bi bi-star-fill text-yellow-500"></i>`;
             }
             return `
-         <div class="flex flex-col gap-2 w-1/4 border border-gray-200 p-1 rounded-md">
-                            <div
-                                class="relative bg-white   overflow-hidden group h-[250px] flex justify-between flex-col items-center "
-                            >
-                                <div
-                                    class="absolute top-2 left-2 w-15 z-50 h-5 px-3 float-start items-center justify-center leading-5 bg-red-500 text-white text-xs rounded-sm"
+            <div
+                            class="cards d-flex flex-column gap-2"
+                            style="width: 18rem"
+                        >
+                            <div class="imgContainer column position-relative">
+                                <a
+                                    href="product.html?id=${product.id}"
+                                    class="text-decoration-none d-flex align-content-center justify-content-center"
                                 >
-                                    -${randomDiscount}%
+                                    <img
+                                        src="${product.image}"
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                </a>
+                                <div
+                                    class="cardIcons d-flex flex-column align-items-end p-3 position-absolute top-0 end-0"
+                                >
+                                    <img src="assets/heart small.png" alt="" />
+                                    <img src="assets/Quick View.png" alt="" />
                                 </div>
                                 <div
-                                    class="absolute flex flex-col gap-2 top-2 right-2"
+                                    class="discount bg-danger position-absolute d-flex align-items-center justify-content-center"
                                 >
-                                    <i class="bi bi-heart text-2xl"></i>
-                                    <i class="bi bi-eye text-2xl"></i>
+                                    -40%
                                 </div>
-                              <a class="flex-1 relative h-full" href="product.html?id=${
-                                  product.id
-                              }">  
-                                    <img src="${
-                                        product.image
-                                    }" alt="" class="w-full h-full object-fill" />
-                              </a>
-                                <button
-                                    class="w-full absolute bottom-0 rounded-md bg-black text-white py-2 mt-auto capitalize text-sm font-bold hidden group-hover:block hover:block h-10"
+                                <div
+                                    class="addCart position-absolute bottom-0 bg-dark text-light w-100 d-flex justify-content-center align-items-center"
                                 >
                                     Add to cart
-                                </button>
+                                </div>
                             </div>
-                            <div class="text-black font-extrabold text-sm h-[40px]">
-                               ${product.title}
-                            </div>
-                            <div class="flex gap-2">
-                                <span class="text-red-500 text-sm font-bold"
-                                    >$${(
-                                        product.price -
-                                        (product.price * randomDiscount) / 100
-                                    ).toFixed(2)}</span
+                            <div class="cardTitle">
+                                <div
+                                    class="fs-6 fw-bold"
+                                    style="
+                                        height: 60px;
+                                        max-height: 50px;
+                                        overflow: hidden;
+                                    "
                                 >
-                                <span
-                                    class="line-through text-sm font-bold text-gray-400"
-                                    >$${product.price}</span
-                                >
+                                    ${product.title}
+                                </div>
                             </div>
-                            <div class="flex gap-2">
-                                <span>
+                            <ul class="list-group list-group-flush">
+                                <div class="text-danger fs-6 fw-bold">
+                                    $252
+                                    <span
+                                        style="
+                                            text-decoration: line-through;
+                                            color: grey;
+                                        "
+                                        >$${product.price}</span
+                                    >
+                                </div>
+                                <div class="stars d-flex flex-row">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <div class="fs-6" style="color: gray">
+                                        (${product.rating.count})
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+            `;
+        })
+        .join("");
+    Populate(PreantId, productshtml);
+};
+const RenderExpolrerProducts = async (products, PreantId) => {
+    await new Promise((resolve, reject) => {
+        setTimeout(resolve, 1000);
+    });
+    const productshtml = shuffleArray([...products])
+        .slice(0, 8)
+        .map((product) => {
+            const randomDiscount = Math.floor(Math.random() * 50) + 1;
+            let stars = "";
+            for (
+                let index = 0;
+                index < Math.floor(+product.rating.rate);
+                index++
+            ) {
+                stars += ` <i class="bi bi-star-fill text-yellow-500"></i>`;
+            }
+            return `
+            <div class="p-2 col-12 col-lg-3">
+                        <div class="product-card d-flex flex-column">
+                            <a
+                                href="product.html?id=${product.id}"
+                                class="product-image-container"
+                                style="
+                                    height: 300px;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    position: relative;
+                                "
+                            >
+                                <img
+                                    src="${product.image}"
+                                    alt=".."
+                                    class="product-image"
+                                    style="
+                                        object-fit: contain;
+                                        height: 100%;
+                                        width: 100%;
+                                        object-position: center;
+                                    "
+                                />
+                            </a>
+                            <p class="product-name pt-3" style="height: 90px">${product.title}</p>
+                            <div class="price-rating d-flex flex-column">
+                                <span class="price">$${product.price}</span>
+                                <div class="rating">
                                     ${stars}
-                                </span>
-                                <span class="text-gray-400">(${
-                                    product.rating.count
-                                })</span>
+                                    <span>(${product.rating.count})</span>
+                                </div>
                             </div>
-                        </div>`;
+                        </div>
+                    </div>
+            `;
         })
         .join("");
     Populate(PreantId, productshtml);
@@ -82,8 +166,9 @@ const RenderProducts = async (products, PreantId) => {
 const getProducts = async () => {
     const response = await fetch("https://fakestoreapi.com/products");
     const products = await response.json();
-    RenderProducts(products, "best-sellers");
-    RenderProducts(products, "flash");
+    RenderProducts(products, "cardscontainer");
+    RenderProducts(products, "best-selling");
+    RenderExpolrerProducts(products, "product-grid");
 };
 
 getProducts();
@@ -134,13 +219,13 @@ function updateTimerBanner() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("days2").textContent =
-        days < 10 ? `0${days}` : days;
+        days < 10 ? `0${days} Days` : `${days} Days`;
     document.getElementById("hours2").textContent =
-        hours < 10 ? `0${hours}` : hours;
+        hours < 10 ? `0${hours} Hours` : `${hours} Hours`;
     document.getElementById("minutes2").textContent =
-        minutes < 10 ? `0${minutes}` : minutes;
+        minutes < 10 ? `0${minutes} Minutes` : `${minutes} Minutes`;
     document.getElementById("seconds2").textContent =
-        seconds < 10 ? `0${seconds}` : seconds;
+        seconds < 10 ? `0${seconds} Seconds` : `${seconds} Seconds`;
 
     if (distance < 0) {
         clearInterval(timerInterval);

@@ -1,225 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./webfonts/all.min.css">
-    <link rel="stylesheet" href="checkoutCss.css">
-    <title>check out </title>
-</head>
-<body>
-    <div id="container" >
-        <div id="top_header" >
-            <div id="th_frame1" >
-                <div id="tp_frame2" >
-                    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
-                    <a href="#">ShopNow</a>
-                </div>
-                <div id="tp_frame3" >
-                
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./webfonts/all.min.css" />
+        <link rel="stylesheet" href="checkoutCss.css" />
+        <title>check out</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top_header">
+                <div id="th_frame1">
+                    <div id="tp_frame2">
+                        <p>
+                            Summer Sale For All Swim Suits And Free Express
+                            Delivery - OFF 50%!
+                        </p>
+                        <a href="#">ShopNow</a>
+                    </div>
+                    <div id="tp_frame3">
                         <p>English</p>
-                    
-                
-                        <i class="fa-solid fa-caret-down "></i>
-                        
-                    
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="header">
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="h-frame1">
+                    <p>Exclusive</p>
+                    <div id="h-frame2">
+                        <a href="#">Home</a>
+                        <a href="#">Contact</a>
+                        <a href="#">About</a>
+                        <a href="#">Sign up</a>
+                    </div>
+                </div>
+                <div id="h-frame3">
+                    <div id="h-frame4">
+                        <input
+                            type="text"
+                            placeholder="what are you looking for?"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div id="h-frame5">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            </div>
+
+            <main>
+                <div id="road-map">
+                    <p>
+                        Account / My Account / Product / View Cart /
+                        <b>Checkout</b>
+                    </p>
+                </div>
+
+                <div id="billing">
+                    <p><b>Billing Details</b></p>
+                </div>
+                <div id="container_products">
+                    <div id="details">
+                        <div id="frame_names">
+                            <label for="first_name">First Name</label>
+                            <input id="fist_name" type="text" />
+                            <label for="company_name">Company Name</label>
+                            <input id="company_name" type="text" />
+                            <label for="street_name">Street Name</label>
+                            <input id="street_name" type="text" />
+                            <label for="apartment_name">Apartment ,floor</label>
+                            <input id="apartment_name" type="text" />
+                            <label for="town_name">Town ,City</label>
+                            <input id="town_name" type="text" />
+                            <label for="phone_namber">Phone Number</label>
+                            <input id="phone_number " type="number" />
+                            <label for="email">Email Address</label>
+                            <input id="email" type="text" />
+                        </div>
+
+                        <div id="check_box">
+                            <input type="checkbox" />
+                            save this informationfor faster check-out next time
+                        </div>
+                    </div>
+                    <div id="elements-container">
+                        <div id="main-cart">
+                            <div id="cart-section">
+                                <p id="product">Product</p>
+                                <p id="subtotal">Subtotal</p>
+                            </div>
+                            <div id="cart-section">
+                                <figure id="product">
+                                    <img
+                                        alt="img"
+                                        src="./images/checkout-img1.png"
+                                    />
+                                    <figcaption>LCD Moniter</figcaption>
+                                </figure>
+
+                                <p id="subtotal">$650</p>
+                            </div>
+                            <div id="cart-section">
+                                <figure id="product">
+                                    <img
+                                        alt="img"
+                                        src="./images/checkout-img1.png"
+                                    />
+                                    <figcaption>H1 Gamepad</figcaption>
+                                </figure>
+
+                                <p id="subtotal">$1100</p>
+                            </div>
+                            <div id="total_container" class="w-100 mt-3">
+                                <div id="cart-total" class="">
+                                    <p><b>CART TOTAL</b></p>
+                                </div>
+                                <div id="elements">
+                                    <p>Subtotal</p>
+                                    <p>$1750</p>
+                                </div>
+                                <div id="elements">
+                                    <p>Shipping</p>
+                                    <p>free</p>
+                                </div>
+                                <div id="elements">
+                                    <p>Total</p>
+                                    <p>$1750</p>
+                                </div>
+                            </div>
+                            <div id="radio" class="w-100">
+                                <div>
+                                    <input
+                                        id="bank"
+                                        type="radio"
+                                        name="payment"
+                                    />
+                                    <label for="bank">Bank</label>
+                                </div>
+                                <div>
+                                    <i
+                                        class="fa-brands fa-cc-visa text-danger"
+                                    ></i>
+                                    <i
+                                        class="fa-brands fa-cc-mastercard mastercard-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-brands fa-paypal text-info"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div id="radio" class="w-100">
+                                <div>
+                                    <input
+                                        id="cash"
+                                        type="radio"
+                                        name="payment"
+                                    />
+                                    <label for="cash">Cash</label>
+                                </div>
+                            </div>
+                            <div
+                                id="coupon-container"
+                                class="d-flex w-100 justify-content-between"
+                            >
+                                <input
+                                    type="text"
+                                    id="text"
+                                    placeholder="coupon code"
+                                />
+                                <button
+                                    class="bg-danger border-0 text-white rounded-lg"
+                                    id="applay-button"
+                                >
+                                    Apply Coupon
+                                </button>
+                            </div>
+                            <div
+                                id="place_order"
+                                class="d-flex w-100 justify-content-between"
+                            >
+                                <button
+                                    class="bg-danger border-0 text-white rounded-lg mt-4"
+                                    id="place_order"
+                                >
+                                    Apply Coupon
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- footer -->
+            <div id="footer">
+                <div id="footer-container">
+                    <div id="footer-elements">
+                        <h4>Exclusive</h4>
+                        <p>Supscribe</p>
+                        <div id="gmail">
+                            <p>Get 10% off your first order</p>
+                            <input type="text" placeholder="Enter your gmail" />
+                        </div>
+                    </div>
+                    <div id="footer-elements">
+                        <h4>Support</h4>
+                        <p>111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.</p>
+                        <p>exclusive@gmail.com</p>
+                        <p>+88015-88888-9999</p>
+                    </div>
+                    <div id="footer-elements">
+                        <h4>Account</h4>
+                        <p><a href="#">My Account</a></p>
+                        <p><a href="#">Login / Register</a></p>
+                        <p><a href="#">Cart</a></p>
+                        <p><a href="#">Wishlist</a></p>
+                        <p><a href="#">Shop</a></p>
+                    </div>
+                    <div id="footer-elements">
+                        <h4>Quick Link</h4>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Terms Of Use</a></p>
+                        <p><a href="#">FAQ</a></p>
+                        <p><a href="#">Contact</a></p>
+                    </div>
+                </div>
+                <!-- Footer Copyright Section -->
+                <div class="text-center py-3">
+                    <p class="mb-0 text-white-50">
+                        &copy; Copyright Rimel 2022. All rights reserved
+                    </p>
                 </div>
             </div>
         </div>
-        <div id="header" >
-            <div class="hamburger-menu" id="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-           <div id="h-frame1">
-           <p>Exclusive</p>
-            <div id="h-frame2">
-                <a href="#">Home</a>
-                <a href="#">Contact</a>
-                <a href="#">About</a>
-                <a href="#">Sign up</a>
-            </div>
-          </div>
-          <div id="h-frame3">
-            <div id="h-frame4">
-            
-            <input type="text" placeholder="what are you looking for?">
-            <i class="fa-solid fa-magnifying-glass"></i>
-           </div>
-           <div id="h-frame5">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-regular fa-user"></i>
-           </div>
-    
-          </div>
-    
-        </div>
-        <hr id="hr">
-        
-        <main>
-            <div id="road-map">
-                <p>Account / My Account / Product  / View Cart / <b>Checkout</b></p> 
-            </div>
-
-            <div id="billing" >
-                <p><b>Billing Details</b></p>
-            </div>
-        <div id="container_products">
-
-            <div id="details">
-                <div id="frame_names">
-                 <label for="first_name">First Name</label>
-                 <input id="fist_name" type="text">
-                 <label for="company_name">Company Name</label>
-                 <input id="company_name" type="text">
-                 <label for="street_name">Street Name</label>
-                 <input id="street_name" type="text">
-                 <label  for="apartment_name">Apartment ,floor</label>
-                 <input id="apartment_name" type="text">
-                 <label for="town_name">Town ,City</label>
-                 <input id="town_name" type="text">
-                 <label for="phone_namber">Phone Number</label>
-                 <input id="phone_number " type="number">
-                 <label for="email">Email Address</label>
-                 <input id="email" type="text">
-               </div>
-
-               <div id="check_box">
-                
-                <input  type="checkbox">
-                save this informationfor faster check-out next time
-              </div>
-               
-            </div>
-            <div id="elements-container">
-                <div id="main-cart">
-                    <div id="cart-section">
-                        <p  id="product">Product</p>
-                        <p id="subtotal">Subtotal</p>
-                    </div>
-                    <div id="cart-section">
-                        <figure id="product">
-                            <img alt="img" src="./images/img1.png">
-                            <figcaption> LCD Moniter</figcaption>
-                            
-                           
-                        </figure>
-                        
-    
-                        <p id="subtotal">$650</p>
-                    </div>
-                    <div id="cart-section">
-                        <figure id="product">
-                            <img alt="img"  src="./images/img2.png">
-                            <figcaption> H1 Gamepad</figcaption>
-                            
-                           
-                        </figure>
-                        
-    
-                       
-                        
-                        
-                        <p id="subtotal" >$1100</p>
-                    </div>
-                <div  id="total_container" class="w-100 mt-3">
-                    <div id="cart-total" class=""> 
-                        <p><b>CART TOTAL</b></p>
-                     </div>
-                     <div id="elements">
-                        <p>Subtotal</p>
-                        <p>$1750</p>
-                     </div>
-                     <div id="elements">
-                        <p>Shipping</p>
-                        <p>free</p>
-                     </div>
-                     <div id="elements">
-                        <p>Total</p>
-                        <p>$1750</p>
-                     </div>
-                </div>
-                <div id="radio" class="w-100">
-                 <div>
-                    <input id="bank" type="radio" name="payment">
-                    <label for="bank">Bank</label>
-                 </div>
-                 <div>
-                    <i class="fa-brands fa-cc-visa text-danger"></i>
-                    <i class="fa-brands fa-cc-mastercard mastercard-icon"></i>
-                    <i class="fa-brands fa-paypal text-info  "></i>
-                 </div>
-                </div>
-                <div id="radio" class="w-100">
-                  <div>
-                    <input id="cash" type="radio"  name="payment">
-                    <label for="cash">Cash</label>
-                  </div>
-                </div>
-                <div id="coupon-container" class="d-flex w-100 justify-content-between ">
-                    <input type="text" id="text" placeholder="coupon code">
-                    <button  class="bg-danger border-0 text-white rounded-lg " id="applay-button">Apply Coupon</button>
-                </div>
-                <div id="place_order" class="d-flex w-100 justify-content-between ">
-                    <button  class="bg-danger border-0 text-white rounded-lg mt-4 " id="place_order">Apply Coupon</button>
-
-
-                </div>
-
-    
-            </div>
-           
-        </div>
-            
-            
-        </main>
-
-        <!-- footer -->
-        <div id="footer">
-            <div id="footer-container">
-               <div id="footer-elements">
-                   <h4>Exclusive</h4>
-                   <p>Supscribe</p>
-                   <div id="gmail">
-                       <p>Get 10% off your first order</p>
-                       <input type="text" placeholder="Enter your gmail">
-                       
-                   </div>
-               </div>
-               <div id="footer-elements">
-                   <h4>Support</h4>
-                   <p>111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.</p>
-                   <p>exclusive@gmail.com</p>
-                   <p>+88015-88888-9999</p>
-               </div>
-               <div id="footer-elements">
-                   <h4>Account</h4>
-                   <p><a href="#" >My Account</a></p>
-                   <p><a href="#" >Login / Register</a></p>
-                   <p><a href="#" >Cart</a></p>
-                   <p><a href="#" >Wishlist</a></p>
-                   <p><a href="#" >Shop</a></p>
-       
-               </div>
-               <div id="footer-elements">
-                   <h4>Quick Link</h4>
-                   <p><a href="#" >Privacy Policy</a></p>
-                   <p><a href="#" >Terms Of Use</a></p>
-                   <p><a href="#" >FAQ</a></p>
-                   <p><a href="#" >Contact</a></p>
-               </div>
-             </div> 
-             <!-- Footer Copyright Section -->
-           <div class="text-center py-3">
-           <p class="mb-0 text-white-50">&copy; Copyright Rimel 2022. All rights reserved</p>
-            </div>
-      </div>
-    </div>   
-       
-    
-</body>
+    </body>
 </html>

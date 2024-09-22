@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Exclusive Store</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="assets/js/product.js" defer></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
         <style>
             .inter {
@@ -22,6 +28,34 @@
                 font-optical-sizing: auto;
             }
         </style>
+        <script>
+            document
+                .getElementById("menuIcon")
+                .addEventListener("click", function () {
+                    const menu = document.getElementById("menu");
+
+                    if (menu.classList.contains("hidden")) {
+                        menu.classList.remove("hidden");
+                        menu.classList.add("flex");
+                    } else {
+                        menu.classList.remove("flex");
+                        menu.classList.add("hidden");
+                    }
+                });
+            document
+                .getElementById("searchIcon")
+                .addEventListener("click", function () {
+                    const search = document.getElementById("search");
+
+                    if (search.classList.contains("hidden")) {
+                        search.classList.remove("hidden");
+                        search.classList.add("flex");
+                    } else {
+                        search.classList.remove("flex");
+                        search.classList.add("hidden");
+                    }
+                });
+        </script>
     </head>
 
     <body class="bg-white capitalize">
@@ -30,7 +64,11 @@
             <nav
                 class="flex relative justify-center md:justify-between py-2 border-b border-gray-300 items-center px-5 flex-wrap"
             >
-                <div class="text-2xl font-extrabold xl:pr-20">Exclusive</div>
+                <a
+                    class="text-2xl font-extrabold xl:pr-20"
+                    href="/ecommercejs-v2"
+                    >Exclusive</a
+                >
                 <div
                     class="md:hidden ml-auto flex items-center justify-center gap-2"
                 >
@@ -47,17 +85,17 @@
                         >Home</a
                     >
                     <a
-                        href="#"
+                        href="./Contact.html"
                         class="hover:border-gray-400 border-b border-transparent"
                         >Contact</a
                     >
                     <a
-                        href="#"
+                        href="./about.html"
                         class="hover:border-gray-400 border-b border-transparent"
                         >About</a
                     >
                     <a
-                        href="#"
+                        href="./signup.html"
                         class="hover:border-gray-400 border-b border-transparent"
                         >Sign Up</a
                     >
@@ -81,8 +119,12 @@
                     class="gap-3 w-full md:w-fit flex items-center justify-center"
                 >
                     <i class="bi bi-person text-2xl font-bold px-2"></i>
-                    <i class="bi bi-heart text-2xl font-bold px-2"></i>
-                    <i class="bi bi-cart text-2xl font-bold px-2"></i>
+                    <a href="./wishlist.html">
+                        <i class="bi bi-heart text-2xl font-bold px-2"></i
+                    ></a>
+                    <a href="./cart.html">
+                        <i class="bi bi-cart text-2xl font-bold px-2"></i
+                    ></a>
                 </div>
             </nav>
             <div class="flex mt-10 gap-2 flex-col my-5">

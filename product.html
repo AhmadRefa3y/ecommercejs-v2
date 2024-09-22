@@ -28,6 +28,34 @@
                 font-optical-sizing: auto;
             }
         </style>
+        <script>
+            document
+                .getElementById("menuIcon")
+                .addEventListener("click", function () {
+                    const menu = document.getElementById("menu");
+
+                    if (menu.classList.contains("hidden")) {
+                        menu.classList.remove("hidden");
+                        menu.classList.add("flex");
+                    } else {
+                        menu.classList.remove("flex");
+                        menu.classList.add("hidden");
+                    }
+                });
+            document
+                .getElementById("searchIcon")
+                .addEventListener("click", function () {
+                    const search = document.getElementById("search");
+
+                    if (search.classList.contains("hidden")) {
+                        search.classList.remove("hidden");
+                        search.classList.add("flex");
+                    } else {
+                        search.classList.remove("flex");
+                        search.classList.add("hidden");
+                    }
+                });
+        </script>
     </head>
 
     <body class="bg-gray-200 capitalize">
@@ -57,17 +85,17 @@
                         >Home</a
                     >
                     <a
-                        href="#"
+                        href="./Contact.html"
                         class="hover:border-gray-400 border-b border-transparent"
                         >Contact</a
                     >
                     <a
-                        href="#"
+                        href="./about.html"
                         class="hover:border-gray-400 border-b border-transparent"
                         >About</a
                     >
                     <a
-                        href="#"
+                        href="./signup.html"
                         class="hover:border-gray-400 border-b border-transparent"
                         >Sign Up</a
                     >
@@ -91,8 +119,12 @@
                     class="gap-3 w-full md:w-fit flex items-center justify-center"
                 >
                     <i class="bi bi-person text-2xl font-bold px-2"></i>
-                    <i class="bi bi-heart text-2xl font-bold px-2"></i>
-                    <i class="bi bi-cart text-2xl font-bold px-2"></i>
+                    <a href="./wishlist.html">
+                        <i class="bi bi-heart text-2xl font-bold px-2"></i
+                    ></a>
+                    <a href="./cart.html">
+                        <i class="bi bi-cart text-2xl font-bold px-2"></i
+                    ></a>
                 </div>
             </nav>
             <!-- product Details -->
@@ -355,32 +387,4 @@
             </div>
         </footer>
     </body>
-    <script defer>
-        document
-            .getElementById("menuIcon")
-            .addEventListener("click", function () {
-                const menu = document.getElementById("menu");
-
-                if (menu.classList.contains("hidden")) {
-                    menu.classList.remove("hidden");
-                    menu.classList.add("flex");
-                } else {
-                    menu.classList.remove("flex");
-                    menu.classList.add("hidden");
-                }
-            });
-        document
-            .getElementById("searchIcon")
-            .addEventListener("click", function () {
-                const search = document.getElementById("search");
-
-                if (search.classList.contains("hidden")) {
-                    search.classList.remove("hidden");
-                    search.classList.add("flex");
-                } else {
-                    search.classList.remove("flex");
-                    search.classList.add("hidden");
-                }
-            });
-    </script>
 </html>

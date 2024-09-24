@@ -299,7 +299,7 @@ a{
 
 @media(max-width:576px)
 {
-    #h-frame1,#h-frame3
+    #h-frame3
     {
         display: none;
     }
@@ -310,7 +310,10 @@ a{
     .hamburger-menu {
         visibility: visible;
         display: inline-block;
-        cursor: pointer;
+        cursor: pointer; 
+        width: 100%;
+        margin-left: 30px;
+    
     }
     #hr
 {
@@ -374,6 +377,28 @@ a{
     width:100%;
 }
 
+#h-frame1{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+    opacity: 100%;
+   
+    background: rgb(15, 14, 14);
+    color: #F5F5F5;
+    display: none;
+
+}
+ #h-frame2 a
+{
+    color: #F5F5F5;
+}
 
  
 

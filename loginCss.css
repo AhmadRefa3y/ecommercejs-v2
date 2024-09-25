@@ -224,7 +224,7 @@ a{
 {
     #h-frame1,#h-frame3
     {
-        display: none;
+        visibility: hidden;
     }
     #top_header
     {
@@ -247,7 +247,13 @@ a{
     top: 50px;
     
 }
+#h-frame2
+{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
 
+}
 
 
 
@@ -282,7 +288,7 @@ a{
    
     background: rgb(15, 14, 14);
     color: #F5F5F5;
-    display: none;
+    visibility: hidden;
 
 }
  #h-frame2 a

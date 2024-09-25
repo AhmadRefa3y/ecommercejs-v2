@@ -308,6 +308,7 @@ a{
         display: none;
     }
     .hamburger-menu {
+        /* z-index: 1;  */
         visibility: visible;
         display: inline-block;
         cursor: pointer; 
@@ -328,6 +329,14 @@ a{
 #road-map
 {
   display: none;
+}
+
+#h-frame2
+{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
 }
 
 
@@ -390,9 +399,9 @@ a{
     padding-top: 20px;
     opacity: 100%;
    
-    background: rgb(15, 14, 14);
+    background: rgb(27, 26, 26);
     color: #F5F5F5;
-    display: none;
+    visibility: hidden;
 
 }
  #h-frame2 a
@@ -406,11 +415,12 @@ a{
     
     .hamburger-menu span {
         display: flex;
+      
         justify-content: start;
         width: 30px;
         height: 4px;
         margin: 5px 0;
-        background-color: black; /* Adjust color as needed */
+        background-color: rgb(18, 17, 17); /* Adjust color as needed */
     }
 
     #footer-container

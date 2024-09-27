@@ -50,8 +50,8 @@ const RenderProducts = async (products, PreantId) => {
                                 <div
                                     class="cardIcons d-flex flex-column align-items-end p-3 position-absolute top-0 end-0"
                                 >
-                                    <img src="assets/heart small.png" alt="" />
-                                    <img src="assets/Quick View.png" alt="" />
+                                    <img src="assets/imgs/heart small.png" alt="" />
+                                    <img src="assets/imgs/Quick View.png" alt="" />
                                 </div>
                                 <div
                                     class="discount bg-danger position-absolute d-flex align-items-center justify-content-center"
@@ -245,3 +245,30 @@ document.getElementById("days").classList.remove("opacity-0");
 document.getElementById("hours").classList.remove("opacity-0");
 document.getElementById("minutes").classList.remove("opacity-0");
 document.getElementById("seconds").classList.remove("opacity-0");
+
+var countDownDate = new Date();
+countDownDate.setDate(countDownDate.getDate() + 10);
+
+var x = setInterval(function () {
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementsByClassName("countdown-container")[0].innerHTML =
+            "COUNTDOWN FINISHED";
+    }
+}, 1000);

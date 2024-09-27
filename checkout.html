@@ -8,7 +8,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./webfonts/all.min.css" />
-        <link rel="stylesheet" href="checkoutCss.css" />
+        <link rel="stylesheet" href="./assets/css/checkoutCss.css" />
         <title>check out</title>
     </head>
     <body>
@@ -63,147 +63,150 @@
 
             <main>
                 <div id="main">
-                <div id="road-map">
-                    <p>
-                        Account / My Account / Product / View Cart /
-                        <b>Checkout</b>
-                    </p>
-                </div>
-
-                <div id="billing">
-                    <p><b>Billing Details</b></p>
-                </div>
-                <div id="container_products">
-                    <div id="details">
-                        <div id="frame_names">
-                            <label for="first_name">First Name</label>
-                            <input id="fist_name" type="text" />
-                            <label for="company_name">Company Name</label>
-                            <input id="company_name" type="text" />
-                            <label for="street_name">Street Name</label>
-                            <input id="street_name" type="text" />
-                            <label for="apartment_name">Apartment ,floor</label>
-                            <input id="apartment_name" type="text" />
-                            <label for="town_name">Town ,City</label>
-                            <input id="town_name" type="text" />
-                            <label for="phone_namber">Phone Number</label>
-                            <input id="phone_number " type="number" />
-                            <label for="email">Email Address</label>
-                            <input id="email" type="text" />
-                        </div>
-
-                        <div id="check_box">
-                            <input type="checkbox" />
-                            save this informationfor faster check-out next time
-                        </div>
+                    <div id="road-map">
+                        <p>
+                            Account / My Account / Product / View Cart /
+                            <b>Checkout</b>
+                        </p>
                     </div>
-                    <div id="elements-container">
-                        <div id="main-cart">
-                            <div id="cart-section">
-                                <p id="product">Product</p>
-                                <p id="subtotal">Subtotal</p>
-                            </div>
-                            <div id="cart-section">
-                                <figure id="product">
-                                    <img
-                                        alt="img"
-                                        src="./images/checkout-img1.png"
-                                    />
-                                    <figcaption>LCD Moniter</figcaption>
-                                </figure>
 
-                                <p id="subtotal">$650</p>
-                            </div>
-                            <div id="cart-section">
-                                <figure id="product">
-                                    <img
-                                        alt="img"
-                                        src="./images/checkout-img1.png"
-                                    />
-                                    <figcaption>H1 Gamepad</figcaption>
-                                </figure>
-
-                                <p id="subtotal">$1100</p>
-                            </div>
-                            <div id="total_container" class="w-100 mt-3">
-                                <div id="cart-total" class="">
-                                    <p><b>CART TOTAL</b></p>
-                                </div>
-                                <div id="elements">
-                                    <p>Subtotal</p>
-                                    <p>$1750</p>
-                                </div>
-                                <div id="elements">
-                                    <p>Shipping</p>
-                                    <p>free</p>
-                                </div>
-                                <div id="elements">
-                                    <p>Total</p>
-                                    <p>$1750</p>
-                                </div>
-                            </div>
-                            <div id="radio" class="w-100">
-                                <div>
-                                    <input
-                                        id="bank"
-                                        type="radio"
-                                        name="payment"
-                                    />
-                                    <label for="bank">Bank</label>
-                                </div>
-                                <div>
-                                    <i
-                                        class="fa-brands fa-cc-visa text-danger"
-                                    ></i>
-                                    <i
-                                        class="fa-brands fa-cc-mastercard mastercard-icon"
-                                    ></i>
-                                    <i
-                                        class="fa-brands fa-paypal text-info"
-                                    ></i>
-                                </div>
-                            </div>
-                            <div id="radio" class="w-100">
-                                <div>
-                                    <input
-                                        id="cash"
-                                        type="radio"
-                                        name="payment"
-                                    />
-                                    <label for="cash">Cash</label>
-                                </div>
-                            </div>
-                            <div
-                                id="coupon-container"
-                                class="d-flex w-100 justify-content-between"
-                            >
-                                <input
-                                    type="text"
-                                    id="text"
-                                    placeholder="coupon code"
-                                />
-                                <button
-                                    class="bg-danger border-0 text-white rounded-lg"
-                                    id="applay-button"
+                    <div id="billing">
+                        <p><b>Billing Details</b></p>
+                    </div>
+                    <div id="container_products">
+                        <div id="details">
+                            <div id="frame_names">
+                                <label for="first_name">First Name</label>
+                                <input id="fist_name" type="text" />
+                                <label for="company_name">Company Name</label>
+                                <input id="company_name" type="text" />
+                                <label for="street_name">Street Name</label>
+                                <input id="street_name" type="text" />
+                                <label for="apartment_name"
+                                    >Apartment ,floor</label
                                 >
-                                    Apply Coupon
-                                </button>
+                                <input id="apartment_name" type="text" />
+                                <label for="town_name">Town ,City</label>
+                                <input id="town_name" type="text" />
+                                <label for="phone_namber">Phone Number</label>
+                                <input id="phone_number " type="number" />
+                                <label for="email">Email Address</label>
+                                <input id="email" type="text" />
                             </div>
-                            <div
-                                id="place_order"
-                                class="d-flex w-100 justify-content-between"
-                            >
-                                <button
-                                    class="bg-danger border-0 text-white rounded-lg mt-4"
+
+                            <div id="check_box">
+                                <input type="checkbox" />
+                                save this informationfor faster check-out next
+                                time
+                            </div>
+                        </div>
+                        <div id="elements-container">
+                            <div id="main-cart">
+                                <div id="cart-section">
+                                    <p id="product">Product</p>
+                                    <p id="subtotal">Subtotal</p>
+                                </div>
+                                <div id="cart-section">
+                                    <figure id="product">
+                                        <img
+                                            alt="img"
+                                            src="./assets/imgs/checkout-img1.png"
+                                        />
+                                        <figcaption>LCD Moniter</figcaption>
+                                    </figure>
+
+                                    <p id="subtotal">$650</p>
+                                </div>
+                                <div id="cart-section">
+                                    <figure id="product">
+                                        <img
+                                            alt="img"
+                                            src="./assets/imgs/checkout-img1.png"
+                                        />
+                                        <figcaption>H1 Gamepad</figcaption>
+                                    </figure>
+
+                                    <p id="subtotal">$1100</p>
+                                </div>
+                                <div id="total_container" class="w-100 mt-3">
+                                    <div id="cart-total" class="">
+                                        <p><b>CART TOTAL</b></p>
+                                    </div>
+                                    <div id="elements">
+                                        <p>Subtotal</p>
+                                        <p>$1750</p>
+                                    </div>
+                                    <div id="elements">
+                                        <p>Shipping</p>
+                                        <p>free</p>
+                                    </div>
+                                    <div id="elements">
+                                        <p>Total</p>
+                                        <p>$1750</p>
+                                    </div>
+                                </div>
+                                <div id="radio" class="w-100">
+                                    <div>
+                                        <input
+                                            id="bank"
+                                            type="radio"
+                                            name="payment"
+                                        />
+                                        <label for="bank">Bank</label>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="fa-brands fa-cc-visa text-danger"
+                                        ></i>
+                                        <i
+                                            class="fa-brands fa-cc-mastercard mastercard-icon"
+                                        ></i>
+                                        <i
+                                            class="fa-brands fa-paypal text-info"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div id="radio" class="w-100">
+                                    <div>
+                                        <input
+                                            id="cash"
+                                            type="radio"
+                                            name="payment"
+                                        />
+                                        <label for="cash">Cash</label>
+                                    </div>
+                                </div>
+                                <div
+                                    id="coupon-container"
+                                    class="d-flex w-100 justify-content-between"
+                                >
+                                    <input
+                                        type="text"
+                                        id="text"
+                                        placeholder="coupon code"
+                                    />
+                                    <button
+                                        class="bg-danger border-0 text-white rounded-lg"
+                                        id="applay-button"
+                                    >
+                                        Apply Coupon
+                                    </button>
+                                </div>
+                                <div
                                     id="place_order"
+                                    class="d-flex w-100 justify-content-between"
                                 >
-                                    Apply Coupon
-                                </button>
+                                    <button
+                                        class="bg-danger border-0 text-white rounded-lg mt-4"
+                                        id="place_order"
+                                    >
+                                        Apply Coupon
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </main>
 
             <!-- footer -->
@@ -247,7 +250,6 @@
                 </div>
             </div>
         </div>
-        <script src="hamburger.js"></script>
-
+        <script src="/assets/js/hamburger.js"></script>
     </body>
 </html>
